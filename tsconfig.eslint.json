@@ -1,0 +1,7 @@
+{
+  /**
+   * This file is used by ESLint to know what files at the root of the project
+   * should be linted by the typescript-eslint parser.
+   */
+  "extends": "./tsconfig.json",
+}

@@ -1,0 +1,79 @@
+{
+  "name": "sample-descope",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kjstauffer/sample-descope.git"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=18.11.0",
+    "pnpm": ">=7.1.0"
+  },
+  "dependencies": {
+    "@ag-grid-community/client-side-row-model": "^30.1.0",
+    "@ag-grid-community/core": "^30.1.0",
+    "@ag-grid-community/react": "^30.1.0",
+    "@ag-grid-community/styles": "^30.1.0",
+    "@descope/node-sdk": "^1.5.7",
+    "@descope/react-sdk": "^1.0.14",
+    "@tanstack/react-query": "^4.35.3",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vite-express": "^0.10.0"
+  },
+  "devDependencies": {
+    "@swc/core": "1.3.82",
+    "@types/cookie-parser": "^1.4.4",
+    "@types/express": "^4.17.17",
+    "@types/express-serve-static-core": "^4.17.36",
+    "@types/morgan": "^1.9.5",
+    "@types/node": "^20.6.0",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@vitejs/plugin-react": "^4.0.4",
+    "autoprefixer": "^10.4.15",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-no-instanceof": "^1.0.1",
+    "eslint-plugin-no-only-tests": "^3.1.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-sort-destructure-keys": "^1.5.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-typescript-sort-keys": "^3.0.0",
+    "eslint-plugin-unicorn": "^48.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.29",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.4",
+    "tailwindcss": "^3.3.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9",
+    "vitest": "^0.34.4"
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev:update-deps": "rm -rf pnpm-lock.yaml node_modules/ **/node_modules && pnpm install",
+    "dev": "vite dev",
+    "format": "prettier --write .",
+    "lint:format": "prettier --cache --check .",
+    "lint": "eslint --cache .",
+    "script": "./scripts/runTypeScript",
+    "test": "npm-run-all --parallel tsc:check vitest:run lint",
+    "tsc:check": "tsc",
+    "vitest:run": "vitest run"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
+}

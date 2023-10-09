@@ -1,0 +1,8 @@
+.eslintcache
+.pnpm-debug.log
+*.local
+/node_modules/
+coverage/
+dist/
+untracked/
+tsconfig.tsbuildinfo

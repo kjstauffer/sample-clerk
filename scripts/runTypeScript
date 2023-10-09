@@ -1,0 +1,11 @@
+#!/bin/sh
+#!/usr/bin/env node --no-warnings --experimental-specifier-resolution=node --loader ts-node/esm
+
+##
+# Run a TypeScript source file from the command line
+##
+
+# TS_NODE_BIN=`pnpm bin`
+# $TS_NODE_BIN/ts-node-esm -r tsconfig-paths/register --transpile-only "$@"
+
+node --no-warnings --experimental-specifier-resolution=node --loader ts-node/esm "$@"

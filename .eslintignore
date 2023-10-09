@@ -1,0 +1,5 @@
+dist/
+coverage/
+.eslintrc.cjs
+prettier.config.mjs
+tailwind.config.cjs
